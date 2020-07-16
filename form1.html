@@ -1,0 +1,29 @@
+<html>
+<head>
+<script type="text/javascript">
+function fun()
+{
+var u=document.thisform.user.value
+var p=document.thisform.pass.value
+if(u=" ")
+{
+alert("enter your username");
+return false;
+}
+if(p=" ")
+{
+alert("enter your password");
+retun false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<form method="get" name="this form" action="http://www.google.com" onsubmit="returnfun()">
+username<input type="text" name="user"><br>
+password<input type="text" name="pass"><br>
+<input type="submit" value="submit">
+</form>
+</body> 
+</html>
